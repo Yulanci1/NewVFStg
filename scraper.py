@@ -1,6 +1,4 @@
-
-import requests
-from bs4 import BeautifulSoup
+import random
 
 CITIES = [
     "Москва", "Санкт-Петербург", "Екатеринбург", "Новосибирск", "Казань", "Самара",
@@ -8,9 +6,5 @@ CITIES = [
 ]
 
 def check_slots():
-    result = {}
-    for city in CITIES:
-        # Имитация запроса
-        available = False  # замените на реальную проверку
-        result[city] = available
-    return result
+    # Пример: случайная доступность (заменить на реальную проверку)
+    return {city: random.choice([True, False]) for city in CITIES}
